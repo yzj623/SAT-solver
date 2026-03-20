@@ -438,7 +438,7 @@ public:
 int main()
 {
 	auto solver = Solver();
-	solver.parse_DIMACS("100queens.cnf");
+	solver.parse_DIMACS("testunsat.cnf");
 	auto start = std::chrono::high_resolution_clock::now();
 	lbool ans = solver.solve();
 	auto end = std::chrono::high_resolution_clock::now();
